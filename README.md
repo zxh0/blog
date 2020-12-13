@@ -9,4 +9,6 @@
     * [Lua 5.4之虚拟机指令集](articles/lua/2020_11_07_lua54_is.md)
     * [Lua 5.4之语言和标准库](articles/lua/2020_11_10_lua54_lang.md)
 * LLVM
+  * Bitcode系列
+    * [LLVM Bitcode格式介绍（一）](articles/llvm/2020_11_23_bc.md)
 
