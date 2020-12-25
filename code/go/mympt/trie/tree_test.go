@@ -8,26 +8,12 @@ import (
 	"mympt/internal/utils"
 )
 
-func TestTrie(t *testing.T) {
-	trie := NewTrie()
-	trie.Put("foo", 123)
-	trie.Put("bar", 456)
-	trie.Put("baz", 789)
-	require.Equal(t, uint(123), trie.Get("foo"))
-	require.Equal(t, uint(456), trie.Get("bar"))
-	require.Equal(t, uint(789), trie.Get("baz"))
-	trie.ForEach(func(key string, val uint) {
-		println(key, ":", val)
-	})
-	println(utils.ToPrettyJSON(trie))
-}
-
 func TestSearchTrie(t *testing.T) {
 	testSearchTrie(t, NewTrie())
 }
 
 func testSearchTrie(t *testing.T, tree SearchTree) {
-	tree.Put("", 123)
+	//tree.Put("", 123)
 	tree.Put("C", 1972)
 	tree.Put("C++", 1985)
 	tree.Put("Python", 1989)
@@ -46,7 +32,7 @@ func testSearchTrie(t *testing.T, tree SearchTree) {
 	})
 	println(utils.ToPrettyJSON(tree))
 
-	require.Equal(t, uint(123), tree.Get(""))
+	//require.Equal(t, uint(123), tree.Get(""))
 	require.Equal(t, uint(1972), tree.Get("C"))
 	require.Equal(t, uint(1985), tree.Get("C++"))
 	require.Equal(t, uint(1989), tree.Get("Python"))
