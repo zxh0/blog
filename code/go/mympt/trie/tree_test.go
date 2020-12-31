@@ -10,6 +10,9 @@ import (
 
 func TestSearchTrie(t *testing.T) {
 	testSearchTrie(t, NewTrie())
+	testSearchTrie(t, NewRadixTrie())
+	testSearchTrie(t, NewPatriciaTrie())
+	testSearchTrie(t, NewRadix16Trie())
 }
 
 func testSearchTrie(t *testing.T, tree SearchTree) {
