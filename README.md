@@ -19,6 +19,8 @@
   * 深入理解以太坊存储（五）：Merkle Trie
   * 深入理解以太坊存储（六）：Merkle Radix Trie
   * 深入理解以太坊存储（七）：Merkle Patricia Trie
+* 比特币
+  * [理解比特币（一）：下载区块数据](articles/btc/2021_07_25_mybtc1_download_blocks.md)
 
 
 
